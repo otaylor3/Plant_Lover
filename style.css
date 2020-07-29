@@ -1,0 +1,472 @@
+
+/* global tags */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* navigation  */
+nav {
+    display: flex;
+    min-height: 10vh;
+    margin: auto;
+    width: 100%;
+    flex-direction: row;
+  
+    
+}
+nav ul { 
+    display: flex;
+    flex: 1 1 40rem;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem;
+    align-items: center;
+    padding: 0px 1rem 0px 1rem;
+    font-family: 'Poppins', sans-serif;
+    flex-wrap: wrap;
+    
+}
+  
+
+#logo{
+    flex: 1 1 2rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul a  {
+   text-decoration: none; 
+   color: black;
+   font-family: 'Poppins', sans-serif;
+}
+
+ul a:hover {
+    color: green;
+}
+
+
+/* hero section  */
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/homepic1.jpg);
+    min-height: 90vh;
+    background-position: center;
+    background-size: cover;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero h2 {
+    text-align: center;
+    color:gold;
+    
+}
+
+.bigtext h1 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* main content  */
+.planticons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    
+}
+
+.planticons h2 {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.planticons img {
+    width: 3rem;
+    height: 3rem;
+}
+
+#buybtn {
+   
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    width: 10rem;
+}
+
+#buybtn:hover {
+    background-color: green;
+}
+
+#button:active {
+    background-color:greenyellow;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+.about-head {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    min-height: 10vh;
+    margin: 1rem;
+    color:white;
+    padding: 1rem;
+    flex: 1 1;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    min-height: 40vh;
+    margin: 1rem;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    flex: 1 1;
+    margin:auto;
+}
+
+.card {
+ margin: 1rem;
+ flex: 1 1 20rem;
+ text-align: center;
+ box-shadow: 0px 0px 10px rgb(0,0,0,0.1);
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    width: 20rem;
+    height: 20rem;
+    flex: 1 1 20rem;
+    margin: 1rem;
+}
+
+.card p {
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* contact form */
+.formwrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 20px;
+    min-height: 30vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    
+   
+}
+
+
+
+.contactfirst {
+    background-color: rgba(19,28,39, 0.8);
+    border-radius: 20px;
+}
+
+.contactform {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 60rem;
+   
+  
+}
+
+#ctnbutton {
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    width: 10rem;
+    text-align: center;
+   
+}
+
+#ctnbutton:hover{
+    background-color: rgba(199, 189, 82, 1);
+}
+
+.email {
+    margin: 4rem;
+    
+}
+
+.name {
+    margin: 4rem;
+}
+
+
+.foot {
+    background-color: black;
+    display: flex;
+    color: white;
+    max-width: 100%;
+    flex-direction: row;
+    min-height: 10vh;
+    
+
+}
+
+.footerhead {
+    flex: 1 1 40rem;
+    padding: 1rem;
+    font-size: large;
+}
+
+.footerimages {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 40rem;
+    
+}
+#footericons {
+    
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 40rem;
+    justify-content: flex-end;
+    list-style: none;
+    margin: auto;
+    padding: 1rem;
+}
+
+#footericons img {
+    width: 3rem;
+    height: 3rem;
+    margin:1rem
+
+}
+
+
+
+
+@media screen and (max-width: 320px){
+    #footericons {
+    
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 10rem;
+        justify-content: center;
+        list-style: none;
+        margin: auto;
+        padding: 1rem;
+        flex: wrap;
+    }
+    .footerhead {
+        flex: 1 1 10rem;
+        justify-content: center;
+        padding: 1rem;
+        font-size: large;
+        text-align: center;
+    }
+
+    .foot {
+        background-color: black;
+        background-size: cover;
+        display: flex;
+        color: white;
+        max-width: 100%;
+        flex-direction: row;
+        min-height: 10vh;
+        
+    
+    }
+}
+
+/* mobile responsive views */
+@media screen and (max-width:1032px) {
+    .planticons h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        margin-right: 1.5rem;
+    }
+    .contactfirst {
+        background-color: rgba(19,28,39, 0.8);
+        border-radius: 20px;
+    }
+   
+
+}
+
+/* #formname {
+    width: 20rem;
+    height: 2rem;
+}
+
+#formemail {
+    width: 20rem;
+    height: 2rem;
+} */
+
+@media screen and (max-width: 768){
+    .contactfirst {
+        background-color: rgba(19,28,39, 0.8);
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+
+    }
+
+    .contacthead h1{
+        padding-top: 1rem;
+    }
+     
+    .name {
+       
+        margin: 1rem;
+       
+    }
+   
+    .email {
+        
+        margin: 1rem;
+        
+    }
+
+    .contact{
+        width: 100%;
+    }
+    
+    #footericons img {
+        width: 1rem;
+        height: 1rem;
+        margin:1rem
+        
+    }
+    
+        
+       
+}
+
+
+
+
+
+
+@media screen and (max-width: 932px) {
+
+   
+     nav  {
+         display:flex;
+         justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+     }
+
+     nav ul {
+        justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+     }
+    
+     .hero {
+         background-size: cover;
+         width: 100%;
+         height: auto;
+         background-position: right;
+         
+     }
+     .contactfirst {
+        background-color: rgba(19,28,39, 0.8);
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+
+    }
+
+    .contacthead h1{
+        padding-top: 1rem;
+    }
+     
+    .name {
+       
+        margin: 1rem;
+       
+    }
+   
+    .email {
+        
+        margin: 1rem;
+        
+    }
+
+    .contact{
+        width: 100%;
+    }
+    
+ 
+       
+
+}
