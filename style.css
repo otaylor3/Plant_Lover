@@ -16,11 +16,23 @@ body {
 
 /* navigation  */
 
+.fullnav {
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+}
 .aboutlogo {
     display: flex;
     justify-content: center;
     align-content: center;
     text-align: center;
+    top: 0;
+    margin: 1rem;
+}
+
+#logo {
+    max-width: 20rem;
 }
 .nav {
     display: flex;
@@ -87,7 +99,7 @@ header nav {
     width: 100%;
     margin: auto;
     flex-direction: row;
-    display: none;
+    
    
 }
 
@@ -119,6 +131,8 @@ header nav ul {
 .navigation a{
     color: black;
     text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
     
     
 }
@@ -220,6 +234,9 @@ header nav ul {
     flex: 1 1;
 }
 
+.aboutsection {
+    z-index: -1;
+}
 .cards {
     display: flex;
     flex-direction: row;
@@ -369,38 +386,7 @@ header nav ul {
 
 
 
-@media screen and (max-width: 320px){
-    #footericons {
-    
-        display: flex;
-        flex-direction: row;
-        flex: 1 1 10rem;
-        justify-content: center;
-        list-style: none;
-        margin: auto;
-        padding: 1rem;
-        flex: wrap;
-    }
-    .footerhead {
-        flex: 1 1 10rem;
-        justify-content: center;
-        padding: 1rem;
-        font-size: large;
-        text-align: center;
-    }
 
-    .foot {
-        background-color: black;
-        background-size: cover;
-        display: flex;
-        color: white;
-        max-width: 100%;
-        flex-direction: row;
-        min-height: 10vh;
-        
-    
-    }
-}
 
 /* mobile responsive views */
 @media screen and (max-width:1032px) {
@@ -426,6 +412,91 @@ header nav ul {
     width: 20rem;
     height: 2rem;
 } */
+
+
+
+
+
+
+
+
+@media screen and (max-width: 932px) {
+
+   
+     nav  {
+         display:flex;
+         justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+     }
+
+     nav ul {
+        justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+     }
+
+     header nav {
+        display: flex;
+        min-height: 10vh;
+        width: 100%;
+        margin: auto;
+        flex-direction: row;
+        display: none;
+       
+    }
+    
+     .hero {
+         background-size: cover;
+         width: 100%;
+         height: auto;
+         background-position: right;
+         
+     }
+     .contactfirst {
+        background-color: rgba(19,28,39, 0.8);
+        border-radius: 20px;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+
+    }
+
+    .contacthead h1{
+        padding-top: 1rem;
+    }
+     
+    .name {
+       
+        margin: 1rem;
+       
+    }
+   
+    .email {
+        
+        margin: 1rem;
+        
+    }
+
+    .contact{
+        width: 100%;
+    }
+    
+ 
+       
+
+}
 
 @media screen and (max-width: 768){
     .contactfirst {
@@ -474,75 +545,35 @@ header nav ul {
        
 }
 
-
-
-
-
-
-@media screen and (max-width: 932px) {
-
-   
-     nav  {
-         display:flex;
-         justify-content: center;
-        align-items: center;
-        margin-right: 2rem;
-        flex-direction: row;
-        flex-wrap: wrap;
-     }
-
-     nav ul {
-        justify-content: center;
-        align-items: center;
-        margin-right: 2rem;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-     }
+@media screen and (max-width: 320px){
+    #footericons {
     
-     .hero {
-         background-size: cover;
-         width: 100%;
-         height: auto;
-         background-position: right;
-         
-     }
-     .contactfirst {
-        background-color: rgba(19,28,39, 0.8);
-        border-radius: 20px;
-        width: 100%;
-        height: auto;
-        margin: auto;
         display: flex;
-        align-items: center;
+        flex-direction: row;
+        flex: 1 1 10rem;
         justify-content: center;
-        flex-direction: column;
+        list-style: none;
+        margin: auto;
+        padding: 1rem;
+        flex: wrap;
+    }
+    .footerhead {
+        flex: 1 1 10rem;
+        justify-content: center;
+        padding: 1rem;
+        font-size: large;
         text-align: center;
-
-
     }
 
-    .contacthead h1{
-        padding-top: 1rem;
-    }
-     
-    .name {
-       
-        margin: 1rem;
-       
-    }
-   
-    .email {
+    .foot {
+        background-color: black;
+        background-size: cover;
+        display: flex;
+        color: white;
+        max-width: 100%;
+        flex-direction: row;
+        min-height: 10vh;
         
-        margin: 1rem;
-        
-    }
-
-    .contact{
-        width: 100%;
-    }
     
- 
-       
-
+    }
 }
