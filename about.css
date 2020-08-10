@@ -33,6 +33,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    display: none;
 }
 .menu-btn {
     position: relative;
@@ -343,7 +344,11 @@ header nav ul {
 }
  
 @media screen and (max-width: 932px) {
-
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
    
     nav  {
         display:flex;
