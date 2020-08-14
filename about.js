@@ -1,3 +1,4 @@
+// navigation 
 const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
@@ -23,3 +24,14 @@ menuBtn.addEventListener('click', () => {
         navigate = false;
     }
 } );
+
+// privacy policy 
+
+function test () {
+    privacy.classList.add('leave');
+}
+const exitbutton = document.querySelector('.exit');
+
+const privacy = document.querySelector('.privacyterms');
+
+exitbutton.addEventListener('click', test );

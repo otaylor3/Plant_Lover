@@ -271,6 +271,78 @@ header nav ul {
     left: 40%;
 }
 
+/* privacy terms */
+
+/* privacy terms */
+.privacyterms {
+    background-color: rgba(44, 159, 9, 0.2);
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: 2rem;
+}
+
+.privacyterms.leave{
+    display: none;
+}
+
+
+.exit {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    
+}
+
+.exit:hover {
+  cursor: pointer;  
+}
+
+.topfooter{
+    z-index: 0;
+}
+
+.privacytext{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#acceptbtn {
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    width: 10rem;
+    text-align: center;
+   
+}
+
+.exitbtn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: 1rem;
+}
+
+#acceptbtn:hover{
+    background-color: rgba(199, 189, 82, 1);
+}
 /* footer  */
 .foot {
     background-color: black;
@@ -311,6 +383,14 @@ header nav ul {
     height: 3rem;
     margin:1rem
 
+}
+
+.footertext {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 /* animations */
